@@ -1,0 +1,48 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/Autoscroll"
+        android:title="@string/autoscroll"
+        android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/DisableAutoScroll"
+                android:title="@string/Disable_Autoscroll" />
+            <item
+                android:id="@+id/EnableAutoScroll"
+                android:title="@string/Enable_Autoscroll" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Synchronize"
+        android:title="@string/Toggle_Sync_Views"
+        android:visible="false" />
+    <item
+        android:id="@+id/Align"
+        android:title="@string/Reset_Sync_Views"
+        android:visible="false">
+    </item>
+
+    <item
+        android:id="@+id/Metadata"
+        android:title="@string/Show_Metadata" />
+    <item
+        android:id="@+id/tableOfContents"
+        android:title="@string/Table_of_Contents">
+    </item>
+    <item
+        android:id="@+id/changeSize"
+        android:checkable="false"
+        android:title="@string/Change_Size"
+        android:visible="false" />
+    <item
+        android:id="@+id/SyncScroll"
+        android:title="@string/syncScroll"
+        android:visible="false" />
+    <item
+        android:id="@+id/Style"
+        android:title="@string/changeStyle" />
+    <item
+        android:id="@+id/Fullscreen"
+        android:title="@string/fullscreen" />
+</menu>

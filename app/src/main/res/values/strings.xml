@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MReader</string>
+
+    <string name="bibl_name">Библиотека</string>
+    <string name="Enable_Autoscroll">Автоскрол вкл.</string>
+    <string name="Disable_Autoscroll">Автоскрол выкл.</string>
+    <string name="Enable_Night_Mode">Ночной режим вкл.</string>
+    <string name="Disable_Night_Mode">Ночной режим выкл.</string>
+    <string name="Toggle_Sync_Views">Переключить просмотр синхронизации</string>
+    <string name="Reset_Sync_Views">Сбросить настройки синхронизации</string>
+    <string name="Show_Metadata">О книге</string>
+    <string name="Refresh">Обновить</string>
+    <string name="bookOpen">Книга открыта</string>
+    <string name="reference">Справка</string>
+    <string name="aboutprog">О программе</string>
+    <string name="Table_of_Contents">Содержание</string>
+    <string name="Change_Size">Изменить размер панели</string>
+    <string name="error_LoadPage">Невозможно загрузить страницу</string>
+    <string name="error_LoadBook">Невозможно загрузить книгу</string>
+    <string name="error_cannotSynchronize">Синхронизация невозможна</string>
+    <string name="error_metadataNotFound">Методанные не найдены</string>
+    <string name="error_tocNotFound">Содержание не найдено</string>
+    <string name="error_cannotChangeSizes">Невозможно изменить размер</string>
+    <string name="url">url</string>
+    <string name="bpath">bpath</string>
+    <string name="invisible">invisible</string>
+    <string name="second">second</string>
+    <string name="time">time</string>
+    <string name="error_cannotTurnPage">Невозможно перелестнуть страницу</string>
+    <string name="tome">tome</string>
+    <string name="lang">lang</string>
+    <string name="error_noOtherLanguages">Нет других языков</string>
+    <string name="state">state</string>
+    <string name="error_cannotLoadState">Невозможно загрузить приложение</string>
+    <string name="textOrHTML">text/html</string>
+    <string name="sync">sync</string>
+    <string name="page">page</string>
+    <string name="CurrentPageBook">CurrentPageBook</string>
+    <string name="LanguageBook">LanguageBook</string>
+    <string name="pathBook">pathBook</string>
+    <string name="error_CannotCloseStream">Cannot close stream!</string>
+    <string name="Book_Stream">Book Stream</string>
+    <string name="nameEpub">nameEpub</string>
+    <string name="error_goToPage">goToPage error:</string>
+    <string name="full_path">full-path</string>
+    <string name="zip">.zip</string>
+    <string name="htmlBodyTableOpen">&lt;html&gt;&lt;body&gt;&lt;table&gt;</string>
+    <string name="titlesMeta">&lt;tr&gt;&lt;td&gt;Название:&lt;/td&gt;</string>
+    <string name="authorsMeta">&lt;tr&gt;&lt;td&gt;Автора:&lt;/td&gt;</string>
+    <string name="contributorsMeta">&lt;tr&gt;&lt;td&gt;Издательство:&lt;/td&gt;</string>
+    <string name="languageMeta">&lt;tr&gt;&lt;td&gt;Язык:&lt;/td&gt;&lt;td&gt;</string>
+    <string name="publishersMeta">&lt;tr&gt;&lt;td&gt;Издатели:&lt;/td&gt;</string>
+    <string name="typesMeta">&lt;tr&gt;&lt;td&gt;Жанр:&lt;/td&gt;</string>
+    <string name="descriptionsMeta">&lt;tr&gt;&lt;td&gt;Описание:&lt;/td&gt;</string>
+    <string name="rightsMeta">&lt;tr&gt;&lt;td&gt;Права:&lt;/td&gt;</string>
+    <string name="tablebodyhtmlClose">&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string name="tocReference">&lt;tr&gt;&lt;td&gt;Содержание:&lt;tr&gt;&lt;td&gt;</string>
+    <string name="change_Font">Изменить шрифт</string>
+    <string name="change_Font_Color">Цвет шрифта:</string>
+    <string name="changeStyle">Настройки</string>
+    <string name="blue_rgb">#0000ff</string>
+    <string name="red_rgb">#ff0000</string>
+    <string name="green_rgb">#00ff00</string>
+    <string name="black_rgb">#000000</string>
+    <string name="white_rgb">#ffffff</string>
+    <string name="light_parchment">#f1f1d4</string>
+    <string name="pearl">#eae0c8</string>
+    <string name="dark_parchment">#8A888B</string>
+    <string name="square_space">#121212</string>
+    <string name="error_CannotChangeStyle">Изменения невозможны!</string>
+    <string name="OK">Подтвердить</string>
+    <string name="Cancel">Отмена</string>
+    <string name="SetSizeTitle">Размер верхней панели:</string>
+    <string name="LanguageChooserTitle">Выбрать второй язык:</string>
+    <string name="parallelTextBool">parallelTextBool</string>
+
+    <string-array name="ColorFont">
+        <item>Черный</item>
+        <item>Белый</item>
+        <item>Красный</item>
+        <item>Зеленый</item>
+        <item>Голубой</item>
+    </string-array>
+
+    <string name="ChangeBackgroundColor">Цвет фона:</string>
+
+    <string-array name="ColorBack">
+        <item>Белый</item>
+        <item>Темный</item>
+        <item>Перламутровый</item>
+        <item>Черный</item>
+        <item>Светлый</item>
+    </string-array>
+
+    <string name="syncScroll">Синхронизация прокрутки</string>
+    <string name="ChangeFont">Шрифт:</string>
+
+    <string-array name="FontStyle">
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array>
+
+    <string name="Arial">Sans Serif</string>
+    <string name="Serif">Serif</string>
+    <string name="Monospace">Monospace</string>
+    <string name="FontSize">Размер шрифта:</string>
+    <string name="LineHeight">Отступ:</string>
+    <string name="TextAlign">Выравнивание:</string>
+
+    <string-array name="testAlignOption">
+        <item>Слева</item>
+        <item>По центру</item>
+        <item>Справа</item>
+        <item>По краям</item>
+    </string-array>
+
+    <string name="Left_Align">Слева</string>
+    <string name="Center_Align">По центру</string>
+    <string name="Right_Align">Справа</string>
+    <string name="DefaultSettings">Стандартные</string>
+    <string name="px">пикс</string>
+    <string name="open">Открыть...</string>
+    <string name="fullscreen">На весь экран</string>
+    <string name="autoscroll">Авто прокрутка</string>
+    <string name="nightmode">Ночной режим</string>
+    <string name="Margin">Отступ:</string>
+
+    <string-array name="FontSize">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="LineHeight">
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.25</item>
+        <item>1.5</item>
+        <item>1.75</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="Justify">Justify</string>
+
+    <string-array name="Margin">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+    <string name="title_activity_split_panel">SplitPanel</string>
+    <string name="action_settings">Настройки</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_book_view">BookView</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_tocview">TOCView</string>
+    <string name="title_activity_data_view">DataView</string>
+    <string name="ViewType">ViewType</string>
+    <string name="title_activity_audio_view">AudioView</string>
+    <string name="audio">Extract Audio</string>
+    <string name="error_openaudiofile">Cannot open audio file</string>
+    <string name="play">&gt;</string>
+    <string name="pause">| |</string>
+    <string name="rew">&lt;&lt;</string>
+    <string name="exAudio">exAudio</string>
+    <string name="no_audio">Can\'t find any audio file</string>
+
+</resources>

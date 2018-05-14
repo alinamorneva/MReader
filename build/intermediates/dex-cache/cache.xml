@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Mina\Downloads\Bibliotheca-master\app\libs\slf4j-android-1.6.1-RC1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a0b527e8aabcc1f1e97d1674dc3f4f0794ec5df1">
+        <dex dex="C:\Users\Mina\Downloads\Bibliotheca-master\app\build\intermediates\pre-dexed\debug\slf4j-android-1.6.1-RC1_cd41d58e782d215a2c988e01c645eeaeeb866cf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Mina\Downloads\Bibliotheca-master\app\libs\epublib-core-latest.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca916295c8af907b0c2d877b5f3a392e5ceb80ea">
+        <dex dex="C:\Users\Mina\Downloads\Bibliotheca-master\app\build\intermediates\pre-dexed\debug\epublib-core-latest_85ae2c990de14cbb7db0bcf3d9c06fbdb2d520c1.jar" />
+    </item>
+
+</items>
