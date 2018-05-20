@@ -44,9 +44,6 @@ public class FileChooser extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> listView, View itemView,
 					int position, long itemId) {
-                //Intent intent = new Intent(this, metadata.class);
-                //startActivity(intent);
-
                 selected = epubs.get(position);
                 Intent resultIntent = new Intent();
                 resultIntent.putExtra("bpath", selected.getAbsolutePath());

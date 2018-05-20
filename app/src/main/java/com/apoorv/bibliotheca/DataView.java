@@ -54,7 +54,7 @@ public class DataView extends SplitPanel {
 		super.saveState(editor);
 		editor.putString("data"+index, data);
 	}
-	
+
 	@Override
 	public void loadState(SharedPreferences preferences)
 	{

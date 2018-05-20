@@ -18,22 +18,22 @@ public class EpubNavigator {
 	private Metadata activity_meta;
 	private static Context context;
 
-    public EpubNavigator(int numberOfBooks, Metadata activityV) {
-        nBooks = numberOfBooks;
-        books = new EpubManipulator[nBooks];
-        views = new SplitPanel[nBooks];
-        extractAudio = new boolean[nBooks];
-        activity_meta = activityV;
-        context = activityV.getBaseContext();
-    }
+	public EpubNavigator(int numberOfBooks, Metadata activityM) {
+		nBooks = numberOfBooks;
+		books = new EpubManipulator[this.nBooks];
+		views = new SplitPanel[nBooks];
+		extractAudio = new boolean[nBooks];
+		activity_meta = activityM;
+		context = activityM.getBaseContext();
+	}
 
-	public EpubNavigator(int numberOfBooks, MainView activityV) {
+	public EpubNavigator(int numberOfBooks, MainView activityMV) {
 		nBooks = numberOfBooks;
 		books = new EpubManipulator[nBooks];
 		views = new SplitPanel[nBooks];
 		extractAudio = new boolean[nBooks];
-		activity = activityV;
-		context = activityV.getBaseContext();
+		activity = activityMV;
+		context = activityMV.getBaseContext();
 	}
 
 	public boolean openBook(String path, int index) {
@@ -154,9 +154,9 @@ public class EpubNavigator {
 	public boolean displayMetadata(int book) {
 		boolean res = true;
 
-		if (books[book] != null) {
+		if (this.books[book] != null) {
 			DataView dv = new DataView();
-			dv.loadData(books[book].metadata());
+			dv.loadData(this.books[book].metadata());
 			changePanel(dv, book);
 		} else
 			res = false;

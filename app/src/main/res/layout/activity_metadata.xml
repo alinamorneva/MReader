@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Metadata">
 
+    <WebView
+        android:id="@+id/metaView"
+        android:layout_width="406dp"
+        android:layout_height="563dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

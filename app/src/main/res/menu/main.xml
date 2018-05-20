@@ -45,4 +45,7 @@
     <item
         android:id="@+id/Fullscreen"
         android:title="@string/fullscreen" />
+    <item
+        android:id="@+id/back_button"
+        android:title="Назад" />
 </menu>

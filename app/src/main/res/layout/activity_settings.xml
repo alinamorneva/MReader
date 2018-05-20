@@ -49,15 +49,17 @@
         android:layout_alignLeft="@+id/spinnerBack"
         android:layout_alignStart="@+id/spinnerBack"
         android:layout_below="@+id/spinnerBack"
+        android:layout_marginRight="17dp"
         android:entries="@array/FontStyle" />
 
     <Spinner
         android:id="@+id/spinnerBack"
-        android:layout_width="235dp"
+        android:layout_width="154dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/spinnerLeft"
         android:layout_alignStart="@+id/spinnerLeft"
         android:layout_below="@+id/spinnerColor"
+        android:layout_marginRight="17dp"
         android:entries="@array/ColorBack" />
 
     <TextView
@@ -91,6 +93,7 @@
         android:layout_alignLeft="@+id/spinnerFS"
         android:layout_alignStart="@+id/spinnerFS"
         android:layout_below="@+id/spinnerFS"
+        android:layout_marginRight="17dp"
         android:entries="@array/LineHeight" />
 
     <Spinner
@@ -101,6 +104,7 @@
         android:layout_alignBottom="@+id/spinnerLeft"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
         android:entries="@array/Margin" />
 
     <Spinner
@@ -119,6 +123,7 @@
         android:layout_alignLeft="@+id/spinnerLH"
         android:layout_alignStart="@+id/spinnerLH"
         android:layout_below="@+id/spinnerLH"
+        android:layout_marginRight="17dp"
         android:entries="@array/testAlignOption" />
 
     <Spinner
@@ -128,6 +133,7 @@
         android:layout_alignLeft="@+id/spinnerFontFamily"
         android:layout_alignStart="@+id/spinnerFontFamily"
         android:layout_below="@+id/spinnerFontFamily"
+        android:layout_marginRight="17dp"
         android:entries="@array/FontSize" />
 
     <TextView
@@ -143,11 +149,12 @@
 
     <Spinner
         android:id="@+id/spinnerColor"
-        android:layout_width="235dp"
+        android:layout_width="154dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/spinnerBack"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/spinnerBack"
+        android:layout_marginRight="17dp"
         android:entries="@array/ColorFont" />
 
     <TextView

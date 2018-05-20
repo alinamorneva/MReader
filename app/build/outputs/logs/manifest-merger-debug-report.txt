@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:2:1-51:12
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.1.aar\48295ad76a64b4d66935ea4d7ac1878d\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d31323491942793f4a2e2884b55da61a\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.1.aar\b64a124c5568762605d46feed2c559bb\AndroidManifest.xml:17:1-24:12
@@ -14,27 +14,27 @@ MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Mina\.gra
 MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.1.aar\625dff43fb65c6d4695145fc06797dce\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.1.aar\a999ef8bf2e98939d62d9764cd47c3b8\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.1.aar\1420fcde3efd2894a652910b6f2ea65d\AndroidManifest.xml:17:1-27:12
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:3:5-37
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:7:5-9:41
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.1.aar\48295ad76a64b4d66935ea4d7ac1878d\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.1.aar\48295ad76a64b4d66935ea4d7ac1878d\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d31323491942793f4a2e2884b55da61a\AndroidManifest.xml:5:5-7:41
@@ -55,36 +55,36 @@ MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Mina\.gradle\c
 MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.1.aar\a999ef8bf2e98939d62d9764cd47c3b8\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.1.aar\1420fcde3efd2894a652910b6f2ea65d\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.1.aar\1420fcde3efd2894a652910b6f2ea65d\AndroidManifest.xml:21:5-23:58
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.1.aar\48295ad76a64b4d66935ea4d7ac1878d\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:11:22-64
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:12:5-81
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:13:5-75
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:13:5-75
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:13:22-72
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:13:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:14:5-80
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:14:5-80
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:14:22-77
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:14:22-77
 application
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:16:5-49:19
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:16:5-49:19
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.1.aar\48295ad76a64b4d66935ea4d7ac1878d\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.1.aar\48295ad76a64b4d66935ea4d7ac1878d\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d31323491942793f4a2e2884b55da61a\AndroidManifest.xml:9:5-20
@@ -106,66 +106,66 @@ MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Mina\.gradle\c
 MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.1.aar\1420fcde3efd2894a652910b6f2ea65d\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Mina\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.1.aar\1420fcde3efd2894a652910b6f2ea65d\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:19:9-42
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:19:9-42
 	android:icon
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:18:9-46
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:18:9-46
 	android:allowBackup
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:20:9-40
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:20:9-40
 activity#com.apoorv.bibliotheca.MainView
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:21:9-29:20
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:21:9-29:20
 	android:label
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:23:13-34
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:22:13-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:27:27-74
 activity#com.apoorv.bibliotheca.FileChooser
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:30:9-49
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:30:9-49
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:30:19-46
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:30:19-46
 activity#com.apoorv.bibliotheca.BookView
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:31:9-33:64
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:31:9-33:64
 	android:label
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:33:13-61
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:33:13-61
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:32:13-37
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:32:13-37
 activity#com.apoorv.bibliotheca.DataView
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:34:9-36:64
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:34:9-36:64
 	android:label
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:36:13-61
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:36:13-61
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:35:13-37
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:35:13-37
 activity#com.apoorv.bibliotheca.AboutView
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:37:9-40:60
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:37:9-40:60
 	android:label
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:39:13-46
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:39:13-46
 	android:theme
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:40:13-57
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:40:13-57
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:38:13-38
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:38:13-38
 activity#com.apoorv.bibliotheca.Reference
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:41:9-44:60
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:41:9-44:60
 	android:label
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:43:13-46
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:43:13-46
 	android:theme
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:44:13-57
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:44:13-57
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:42:13-38
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:42:13-38
 activity#com.apoorv.bibliotheca.Metadata
-ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:45:9-48:60
+ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:45:9-48:60
 	android:label
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:47:13-50
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:47:13-50
 	android:theme
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:48:13-57
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:48:13-57
 	android:name
-		ADDED from C:\Users\Mina\Downloads\MReader\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from C:\Users\Mina\Downloads\MReader-master\app\src\main\AndroidManifest.xml:46:13-37

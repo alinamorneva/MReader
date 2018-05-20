@@ -110,6 +110,10 @@ public class MainView extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
+			case R.id.back_button:
+				Intent intent = new Intent(this, FileChooser.class);
+				startActivity(intent);
+				return true;
 			case R.id.Fullscreen:
 				decorView = getWindow().getDecorView();
 				decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
@@ -158,11 +162,9 @@ public class MainView extends Activity {
 				boolean sync = navigator.flipSynchronizedReadingActive();
 				return true;*/
 			case R.id.Metadata: // информация о книге
-				//navigator.displayMetadata(0);
-
-                Intent intent = new Intent(this, Metadata.class);
-                startActivity(intent);
-
+				navigator.displayMetadata(0);
+//                Intent intent1 = new Intent(this, Metadata.class);
+//                startActivity(intent1);
 				return true;
 			case R.id.tableOfContents:
 			    navigator.displayTOC(0);
