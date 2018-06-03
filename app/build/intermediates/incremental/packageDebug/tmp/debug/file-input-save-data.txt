@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Thu May 17 22:08:00 MSK 2018
+#Mon May 28 18:30:29 MSK 2018
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\Mina\\Downloads\\MReader-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.base=C\:\\Users\\Mina\\Downloads\\MReader\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.path=classes.dex
 0.set=DEX
 count=1

@@ -21,7 +21,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.apoorv.bibliotheca.MainView"
+            android:name="com.apoorv.bibliotheca.MainActivity"
             android:label="MReader" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

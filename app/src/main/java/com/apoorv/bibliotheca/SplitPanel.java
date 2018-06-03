@@ -19,7 +19,7 @@ public abstract class SplitPanel extends Fragment {
 	protected int index;
 	protected RelativeLayout layout;
 	protected Button closeButton;
-	protected EpubNavigator navigator;
+	protected Navigator navigator;
 	protected int screenWidth;
 	protected int screenHeight;
 	protected float weight = 0.5f; // weight of the generalLayout
@@ -28,7 +28,7 @@ public abstract class SplitPanel extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		navigator = ((MainView) getActivity()).navigator;
+		navigator = ((MainActivity) getActivity()).navigator;
 		View v = inflater.inflate(R.layout.activity_split_panel, container,
 				false);
 		created = false;
@@ -84,7 +84,7 @@ public abstract class SplitPanel extends Fragment {
 	}
 
 	public void errorMessage(String message) {
-		((MainView) getActivity()).errorMessage(message);
+		((MainActivity) getActivity()).errorMessage(message);
 	}
 
 	public void saveState(Editor editor) {

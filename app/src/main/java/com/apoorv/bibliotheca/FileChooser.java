@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileChooser extends Activity {
-
 	static List<File> epubs;
 	static List<String> names;
 	ArrayAdapter<String> adapter;

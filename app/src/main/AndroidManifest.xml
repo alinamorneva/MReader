@@ -19,7 +19,7 @@
         android:label="@string/bibl_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainView"
+            android:name=".MainActivity"
             android:label="MReader">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

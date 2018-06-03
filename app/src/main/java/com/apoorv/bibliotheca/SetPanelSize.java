@@ -27,7 +27,7 @@ public class SetPanelSize extends DialogFragment {
 
 		View view = inflater.inflate(R.layout.set_panel_size, null);
 
-		final SharedPreferences preferences = ((MainView) getActivity())
+		final SharedPreferences preferences = ((MainActivity) getActivity())
 				.getPreferences(Context.MODE_PRIVATE);
 
 		sBv = preferences.getInt("seekBarValue", 50);
@@ -49,7 +49,7 @@ public class SetPanelSize extends DialogFragment {
 						if (value >= 0.9)
 							value = (float) 0.9;
 
-						((MainView) getActivity()).changeViewsSize(value);
+						((MainActivity) getActivity()).changeViewsSize(value);
 						SharedPreferences.Editor editor = preferences.edit();
 						sBv = seekbar.getProgress();
 						editor.putInt("seekBarValue", sBv);

@@ -107,7 +107,7 @@
     <string name="Serif">Serif</string>
     <string name="Monospace">Monospace</string>
     <string name="FontSize">Размер шрифта:</string>
-    <string name="LineHeight">Отступ:</string>
+    <string name="LineHeight">Между строк:</string>
     <string name="TextAlign">Выравнивание:</string>
 
     <string-array name="testAlignOption">
@@ -126,7 +126,7 @@
     <string name="fullscreen">На весь экран</string>
     <string name="autoscroll">Авто прокрутка</string>
     <string name="nightmode">Ночной режим</string>
-    <string name="Margin">Отступ:</string>
+    <string name="Margin">Отступ по краям:</string>
 
     <string-array name="FontSize">
         <item>8</item>

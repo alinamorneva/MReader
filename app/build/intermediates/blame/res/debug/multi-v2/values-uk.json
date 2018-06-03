@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Mina\\Downloads\\MReader-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uk\\values-uk.xml",
+            "outputFile": "C:\\Users\\Mina\\Downloads\\MReader\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uk\\values-uk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Mina\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\48295ad76a64b4d66935ea4d7ac1878d\\res\\values-uk\\values-uk.xml",

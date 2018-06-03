@@ -28,7 +28,7 @@ public class Settings extends DialogFragment {
 	protected Spinner spinLeft;
 	protected Spinner spinRight;
 	protected int colInt, backInt, fontInt, alignInt, sizeInt, heightInt, marginLInt, marginRInt;
-	protected MainView a;
+	protected MainActivity a;
     SharedPreferences preferences;
 
 	@Override
@@ -39,7 +39,7 @@ public class Settings extends DialogFragment {
 		// Inflate and set the layout for the dialog
 		// Pass null as the parent view because its going in the dialog layout
 
-		a = (MainView)getActivity();
+		a = (MainActivity)getActivity();
 		View view = inflater.inflate(R.layout.activity_settings, null);
 
 		//final SharedPreferences preferences;
@@ -384,14 +384,4 @@ public class Settings extends DialogFragment {
 
 		return builder.create();
 	}
-
-	public void NightMode(){
-	    a.setColor("#ffffff");
-        a.setBackColor("#f1f1d4");
-        a.setCSS();
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putInt("spinColorValue", colInt);
-        editor.putInt("spinBackValue", backInt);
-        editor.apply();
-    }
 }
