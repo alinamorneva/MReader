@@ -44,7 +44,6 @@ public class Parcer extends Fragment {
     private final String[] binContAttrs = {"content-type"};
     private final String[] binIdAttrs = {"id"};
 
-    //tags initialization which will be considered during parsing run
     private void initializeMap() {
         subTagsMapStart.put("title", "<div style=\"text-align:center;\"><h3>");
         subTagsMapStart.put("emphasis", "<em>");
@@ -80,7 +79,6 @@ public class Parcer extends Fragment {
         super.onDetach();
     }
 
-    //return full text
     synchronized public WeakReference<ArrayList<Pair<String, Integer>>> getPreparedBook() {
         if (lines_for_web != null) {
             return new WeakReference<ArrayList<Pair<String, Integer>>>(lines_for_web);
@@ -89,8 +87,7 @@ public class Parcer extends Fragment {
         }
     }
 
-    //method to parse FB2 using XmlPullParser
-    private void parseFb2(InputStream inputStream, String text) {
+    public void parseFb2(InputStream inputStream, String text) {
         Spanned body;
         Map<String, String> headers = new HashMap<String, String>();
         String noteId = "";
@@ -141,9 +138,7 @@ public class Parcer extends Fragment {
                         break;
                     }
                 }
-                //check the 'book's main contents' tags
                 for (int i = 0; i < bookBodyTags.length; i++) {
-                    //ignore all start tags with attributes for main text tags, e.g. body
                     if (eventType == XmlPullParser.START_TAG && parser.getAttributeCount() == 0 && parser.getName().equals(bookBodyTags[i])) {
                         bookIsOpen = true;
                         bodyTagStack.push(bookBodyTags[i]);
@@ -162,10 +157,9 @@ public class Parcer extends Fragment {
                         break;
                     }
                 }
-                //check notes
                 for (int i = 0; i < notesTags.length; i++) {
                     boolean stop = false;
-                    //take start tags with existing attributes
+
                     if (eventType == XmlPullParser.START_TAG && parser.getAttributeCount() > 0 && parser.getName().equals(notesTags[i])) {
                         int attrCount = parser.getAttributeCount();
                         for (int j = 0; j < attrCount; j++) {
@@ -194,7 +188,7 @@ public class Parcer extends Fragment {
                         break;
                     }
                 }
-                // extract note id from section tag
+
                 for (int i = 0; i < notesSubAttrTags.length; i++) {
                     boolean stop = false;
                     if (notesFound && eventType == XmlPullParser.START_TAG && parser.getName().equals(notesSubAttrTags[i])) {
@@ -218,7 +212,7 @@ public class Parcer extends Fragment {
                         }
                     }
                 }
-                // add a book note
+
                 for (int i = 0; i < notesSubAttrTags.length; i++) {
                     if (noteSectionFound && eventType == XmlPullParser.END_TAG && parser.getName().equals(notesSubAttrTags[i])) {
                         noteSectionFound = false;
@@ -228,7 +222,7 @@ public class Parcer extends Fragment {
                         break;
                     }
                 }
-                //check binaries
+
                 for (int i = 0; i < binTags.length; i++) {
                     if (eventType == XmlPullParser.START_TAG && parser.getName().equals(binTags[i])) {
                         boolean contTypeFound = false;
@@ -258,7 +252,6 @@ public class Parcer extends Fragment {
                     }
                 }
 
-                //check text
                 if (eventType == XmlPullParser.TEXT && headerFound && headerNumber > -1) {
                     headers.put(headerNames[headerNumber], parser.getText());
                 }
@@ -271,7 +264,6 @@ public class Parcer extends Fragment {
                     builder_notes.append(parser.getText() + " ");
                 }
 
-                //parse main contents text
                 if (eventType == XmlPullParser.TEXT && bookIsOpen) {
                     String currentPiece = parser.getText();
                     if (currentPiece.length() > TEXT_CHUNK_SIZE) {

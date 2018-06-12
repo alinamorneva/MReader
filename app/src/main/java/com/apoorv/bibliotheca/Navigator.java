@@ -36,6 +36,10 @@ public class Navigator {
 		context = activityMV.getBaseContext();
 	}
 
+	public Navigator() {
+
+	}
+
 	public boolean openBook(String path, int index) {
 		try {
 			if (books[index] != null)
@@ -106,41 +110,38 @@ public class Navigator {
 	}
 
 	public void closeView(int index) {
-		// case: note or another panel over a book
 		if (books[index] != null
 				&& (!(views[index] instanceof BookView) || (((BookView) views[index]).state != ViewStateEnum.books))) {
 			BookView v = new BookView();
 			changePanel(v, index);
 			v.loadPage(books[index].getCurrentPageURL());
-		} else // all other cases
+		} else
 		{
 			if (books[index] != null)
 				try {
 					books[index].destroy();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			activity.removePanel(views[index]);
 
 			while (index < nBooks - 1) {
-				books[index] = books[index + 1]; // shift left all books
-				if (books[index] != null) // updating their folder
-					books[index].changeDirName(index + ""); // according to the
-															// index
+				books[index] = books[index + 1];
+				if (books[index] != null)
+					books[index].changeDirName(index + "");
 
-				views[index] = views[index + 1]; // shift left every panel
+				views[index] = views[index + 1];
 				if (views[index] != null) {
-					views[index].setKey(index); // update the panel key
+					views[index].setKey(index);
 					if (views[index] instanceof BookView
 							&& ((BookView) views[index]).state == ViewStateEnum.books)
 						((BookView) views[index]).loadPage(books[index]
-								.getCurrentPageURL()); // reload the book page
+								.getCurrentPageURL());
 				}
 				index++;
 			}
-			books[nBooks - 1] = null; // last book and last view
-			views[nBooks - 1] = null; // don't exist anymore
+			books[nBooks - 1] = null;
+			views[nBooks - 1] = null;
 		}
 	}
 
@@ -158,7 +159,6 @@ public class Navigator {
 		return res;
 	}
 
-    // change the panel in position "index" with the new panel p
     public void changePanel(SplitPanel p, int index) {
         if (views[index] != null) {
             activity.removePanelWithoutClosing(views[index]);
@@ -202,7 +202,6 @@ public class Navigator {
 		}
 	}
 
-	// TODO: update when a new SplitPanel's inherited class is created
 	private SplitPanel newPanelByClassName(String className) {
 		if (className.equals(BookView.class.getName()))
 			return new BookView();
@@ -216,7 +215,6 @@ public class Navigator {
 		editor.putBoolean(getS(R.string.sync), synchronizedReadingActive);
 		editor.putBoolean(getS(R.string.parallelTextBool), parallelText);
 
-		// Save Books
 		for (int i = 0; i < nBooks; i++)
 			if (books[i] != null) {
 				editor.putInt(getS(R.string.CurrentPageBook) + i,
@@ -241,7 +239,6 @@ public class Navigator {
 				editor.putString(getS(R.string.pathBook) + i, null);
 			}
 
-		// Save views
 		for (int i = 0; i < nBooks; i++)
 			if (views[i] != null) {
 				editor.putString(getS(R.string.ViewType) + i, views[i]
@@ -268,7 +265,7 @@ public class Navigator {
 			path = preferences.getString(getS(R.string.pathBook) + i, null);
 			extractAudio[i] = preferences.getBoolean(
 					getS(R.string.exAudio) + i, false);
-			// try loading a book already extracted
+
 			if (path != null) {
 				try {
 					books[i] = new Manipulator(path, name, current, lang,

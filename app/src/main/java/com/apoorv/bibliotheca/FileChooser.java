@@ -21,9 +21,6 @@ public class FileChooser extends Activity {
 	static List<String> names;
 	ArrayAdapter<String> adapter;
 	static File selected;
-	boolean firstTime;
-	//SQLiteDatabase db = null;
-	//private static String DBNAME = "BOOKMARKS.db";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +28,7 @@ public class FileChooser extends Activity {
 		setContentView(R.layout.file_chooser_layout);
 
 		if ((epubs == null) || (epubs.size() == 0)) {
-			epubs = epubList(Environment.getExternalStorageDirectory());
+			epubs = bookList(Environment.getExternalStorageDirectory());
 		}
 
 		ListView list = (ListView) findViewById(R.id.fileListView);
@@ -52,14 +49,12 @@ public class FileChooser extends Activity {
 		});
 
 		list.setAdapter(adapter);
-
-		//db = openOrCreateDatabase(DBNAME, Context.MODE_PRIVATE, null);
 	}
 
-	private List<String> fileNames(List<File> files) {
+	public List<String> fileNames(List<File> files) {
 		List<String> res = new ArrayList<String>();
 		for (int i = 0; i < files.size(); i++) {
-			res.add(files.get(i).getName().replace(".epub", ""));
+			res.add(files.get(i).getName().replace(".epub", ".epub").replace(".fb2", ".fb2"));
 			/*
 			NOTE: future expansion
 			res.add(files.get(i).getName().replace(".epub", "").replace(".e0", ""));
@@ -68,17 +63,17 @@ public class FileChooser extends Activity {
 		return res;
 	}
 
-	private List<File> epubList(File dir) {
+	public List<File> bookList(File dir) {
 		List<File> res = new ArrayList<File>();
 		if (dir.isDirectory()) {
 			File[] f = dir.listFiles();
 			if (f != null) {
 				for (int i = 0; i < f.length; i++) {
 					if (f[i].isDirectory()) {
-						res.addAll(epubList(f[i]));
+						res.addAll(bookList(f[i]));
 					} else {
 						String lowerCasedName = f[i].getName().toLowerCase();
-						if (lowerCasedName.endsWith(".epub")/*|| lowerCasedName.endsWith(".fb2")*/) {
+						if (lowerCasedName.endsWith(".epub")|| lowerCasedName.endsWith(".fb2")) {
 							res.add(f[i]);
 						}
 
@@ -97,7 +92,7 @@ public class FileChooser extends Activity {
 	}
 
 	private void refreshList() {
-		epubs = epubList(Environment.getExternalStorageDirectory());
+		epubs = bookList(Environment.getExternalStorageDirectory());
 		names.clear();
 		names.addAll(fileNames(epubs));
 		this.adapter.notifyDataSetChanged();

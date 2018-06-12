@@ -48,7 +48,6 @@ public class Manipulator {
 	FileInputStream fs;
 	private String actualCSS = "";
 
-	// book from fileName
 	public Manipulator(String fileName, String destFolder,
 					   Context theContext) throws Exception {
 
@@ -93,7 +92,6 @@ public class Manipulator {
 		createTocFile();
 	}
 
-	// book from already decompressed folder
 	public Manipulator(String fileName, String folder, int spineIndex,
 					   int language, Context theContext) throws Exception {
 		List<String> spineElements;
@@ -126,7 +124,6 @@ public class Manipulator {
 		goToPage(spineIndex);
 	}
 
-	// set language from index
 	public void setLanguage(int lang) throws Exception {
 		if ((lang >= 0) && (lang <= this.availableLanguages.size())) {
 			this.currentLanguage = lang;
@@ -134,7 +131,6 @@ public class Manipulator {
 		goToPage(this.currentSpineElementIndex);
 	}
 
-	// set language from an identifier string
 	public void setLanguage(String lang) throws Exception {
 		int i = 0;
 		while ((i < this.availableLanguages.size())
@@ -144,7 +140,6 @@ public class Manipulator {
 		setLanguage(i);
 	}
 
-	// create parallel text mapping
 	private void pages(List<SpineReference> spineList, List<String> pages) {
 		int langIndex;
 		String lang;
@@ -157,7 +152,6 @@ public class Manipulator {
 			actualPage = (spineList.get(i)).getResource().getHref();
 			lang = getPageLanguage(actualPage);
 			if (lang != "") {
-				// parallel text available
 				langIndex = languageIndexFromID(lang);
 
 				if (langIndex == this.availableLanguages.size())
@@ -168,14 +162,12 @@ public class Manipulator {
 					pages.add(actualPage);
 				}
 			} else {
-				// parallel text NOT available
 				this.translations.add(false);
 				pages.add(actualPage);
 			}
 		}
 	}
 
-	// language index from language string (id)
 	private int languageIndexFromID(String id) {
 		int i = 0;
 		while ((i < availableLanguages.size())
@@ -187,7 +179,6 @@ public class Manipulator {
 
 	private static String getPathOPF(String unzipDir) throws IOException {
 		String pathOPF = "";
-		// get the OPF path, directly from container.xml
 		BufferedReader br = new BufferedReader(new FileReader(unzipDir
 				+ "/META-INF/container.xml"));
 		String line;
@@ -204,11 +195,9 @@ public class Manipulator {
 		}
 		br.close();
 
-		// in case the OPF file is in the root directory
 		if (!pathOPF.contains("/"))
 			pathOPF = "";
 
-		// remove the OPF file name and the preceding '/'
 		int last = pathOPF.lastIndexOf('/');
 		if (last > -1) {
 			pathOPF = pathOPF.substring(0, last);
@@ -229,7 +218,6 @@ public class Manipulator {
 		zipFile = new ZipFile(sourceZipFile, ZipFile.OPEN_READ);
 		Enumeration zipFileEntries = zipFile.entries();
 
-		// Process each entry
 		while (zipFileEntries.hasMoreElements()) {
 
 			ZipEntry entry = (ZipEntry) zipFileEntries.nextElement();
@@ -247,7 +235,6 @@ public class Manipulator {
 				BufferedInputStream is = new BufferedInputStream(
 						zipFile.getInputStream(entry));
 				int currentByte;
-				// buffer for writing file
 				byte data[] = new byte[BUFFER];
 
 				FileOutputStream fos = new FileOutputStream(destFile);
@@ -281,14 +268,12 @@ public class Manipulator {
 		book = null;
 	}
 
-	// close the stream and delete the extraction folder
 	public void destroy() throws IOException {
 		closeStream();
 		File c = new File(location + decompressedFolder);
 		deleteDir(c);
 	}
 
-	// recursively delete a directory
 	private void deleteDir(File f) {
 		if (f.isDirectory())
 			for (File child : f.listFiles())
@@ -296,7 +281,6 @@ public class Manipulator {
 		f.delete();
 	}
 
-	// change the decompressedFolder name
 	public void changeDirName(String newName) {
 		File dir = new File(location + decompressedFolder);
 		File newDir = new File(location + newName);
@@ -314,12 +298,10 @@ public class Manipulator {
 		}
 	}
 
-	// obtain a page in the current language
 	public String goToPage(int page) throws Exception {
 		return goToPage(page, this.currentLanguage);
 	}
 
-	// obtain a page in the given language
 	public String goToPage(int page, int lang) throws Exception {
 		String spineElement;
 		String extension;
@@ -355,13 +337,11 @@ public class Manipulator {
 		return goToPage(this.currentSpineElementIndex - 1);
 	}
 
-	// create an HTML page with book metadata
 	public String metadata() {
 		List<String> tmp;
 		Metadata metadata = book.getMetadata();
 		String html = getS(R.string.htmlBodyTableOpen);
 
-		// Titles
 		tmp = metadata.getTitles();
 		if (tmp.size() > 0) {
 			html += getS(R.string.titlesMeta);
@@ -370,7 +350,6 @@ public class Manipulator {
 				html += "<tr><td></td><td>" + tmp.get(i) + "</td></tr>";
 		}
 
-		// Authors
 		List<Author> authors = metadata.getAuthors();
 		if (authors.size() > 0) {
 			html += getS(R.string.authorsMeta);
@@ -381,7 +360,6 @@ public class Manipulator {
 						+ " " + authors.get(i).getLastname() + "</td></tr>";
 		}
 
-		// Contributors
 		authors = metadata.getContributors();
 		if (authors.size() > 0) {
 			html += getS(R.string.contributorsMeta);
@@ -393,11 +371,9 @@ public class Manipulator {
 			}
 		}
 
-		// Language
 		html += getS(R.string.languageMeta) + metadata.getLanguage()
 				+ "</td></tr>";
 
-		// Publishers
 		tmp = metadata.getPublishers();
 		if (tmp.size() > 0) {
 			html += getS(R.string.publishersMeta);
@@ -406,7 +382,6 @@ public class Manipulator {
 				html += "<tr><td></td><td>" + tmp.get(i) + "</td></tr>";
 		}
 
-		// Types
 		tmp = metadata.getTypes();
 		if (tmp.size() > 0) {
 			html += getS(R.string.typesMeta);
@@ -415,7 +390,6 @@ public class Manipulator {
 				html += "<tr><td></td><td>" + tmp.get(i) + "</td></tr>";
 		}
 
-		// Descriptions
 		tmp = metadata.getDescriptions();
 		if (tmp.size() > 0) {
 			html += getS(R.string.descriptionsMeta);
@@ -424,7 +398,6 @@ public class Manipulator {
 				html += "<tr><td></td><td>" + tmp.get(i) + "</td></tr>";
 		}
 
-		// Rights
 		tmp = metadata.getRights();
 		if (tmp.size() > 0) {
 			html += getS(R.string.rightsMeta);
@@ -453,7 +426,6 @@ public class Manipulator {
 		return html;
 	}
 
-	// Create an html file, which contain the TOC, in the EPUB folder
 	public void createTocFile() {
 		List<TOCReference> tmp;
 		TableOfContents toc = book.getTableOfContents();
@@ -470,7 +442,6 @@ public class Manipulator {
 				html += "<li>" + "<a href=\"" + path + "\">"
 						+ tmp.get(i).getTitle() + "</a>" + "</li>";
 
-				// pre-order traversal?
 				List<TOCReference> children = tmp.get(i).getChildren();
 
 				for (int j = 0; j < children.size(); j++)
@@ -481,7 +452,6 @@ public class Manipulator {
 
 		html += getS(R.string.tablebodyhtmlClose);
 
-		// write down the html file
 		String filePath = location + decompressedFolder + "/Toc.html";
 		try {
 			File file = new File(filePath);
@@ -494,13 +464,10 @@ public class Manipulator {
 		}
 	}
 
-	// return the path of the Toc.html file
 	public String tableOfContents() {
 		return "File://" + location + decompressedFolder + "/Toc.html";
 	}
 
-	// determine whether a book has the requested page
-	// if so, return its index; return -1 otherwise
 	public int getPageIndex(String page) {
 		int result = -1;
 		String lang;
@@ -520,7 +487,6 @@ public class Manipulator {
 		return result;
 	}
 
-	// set the current page and its language
 	public boolean goToPage(String page) {
 		int index = getPageIndex(page);
 		boolean res = false;
@@ -540,14 +506,9 @@ public class Manipulator {
 		return res;
 	}
 
-	// return the language of the page according to the
-	// ISO 639-1 naming convention:
-	// foo.XX.html where X \in [a-z]
-	// or an empty string if language not found
 	public String getPageLanguage(String page) {
 		String[] tmp = page.split("\\.");
-		// Language XY is present if the string format is "pagename.XY.xhtml",
-		// where XY are 2 non-numeric characters that identify the language
+
 		if (tmp.length > 2) {
 			String secondFromLastItem = tmp[tmp.length - 2];
 			if (secondFromLastItem.matches("[a-z][a-z]")) {
@@ -559,7 +520,6 @@ public class Manipulator {
 
 	// TODO work in progress
 	public void addCSS(String[] settings) {
-		// CSS
 		String css = "<style type=\"text/css\">\n";
 
 		if (!settings[0].isEmpty()) {
@@ -599,7 +559,6 @@ public class Manipulator {
 			writePage(path, source);
 		}
 		actualCSS = css;
-
 	}
 
 	private String readPage(String path) {
